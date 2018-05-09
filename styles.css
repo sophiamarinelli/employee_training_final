@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'berthold_akzidenz_grotesk_bRg';
+    src: url('berthold_akzidenz_grotesk_be_regular-webfont.woff2') format('woff2'),
+         url('berthold_akzidenz_grotesk_be_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "berthold_akzidenz_grotesk_bRg";
+	color: white;
+	font-size: 14pt;
+}
+
+body {
+	background-color: blue;
+	height: 1000px;
+}
+
+.extra_wrapper {
+	position: absolute;
+	right: 0px;
+}
+
+.levels {
+	list-style: none;
+	width: 120px;
+	height: 40px;
+	display: inline-block;
+	color: white;
+	white-space: nowrap;
+}
+
+.levels_2 {
+	list-style: none;
+	width: 200px;
+	height: 40px;
+	display: inline-block;
+	color: white;
+	white-space: nowrap;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+a:active {
+	text-decoration: underline;
+	color: white;
+}
+
+#navbar {
+	position: fixed;
+	bottom: 0px;
+	border: white solid 1px;
+	width: 100%;
+	height: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	background-color: blue;
+	overflow: scroll;
+}
+
+#corp {
+	position: absolute;
+	width: 30px;
+	height: 100%;
+	border: white solid 1px;
+	right: 0px;
+}
+
+.corptext {
+	position: absolute;
+	margin: 0px;
+	height: 20px;
+	width: 400px;
+	padding-bottom: 5px;
+	transform-origin: bottom left;
+	transform: rotate(90deg);
+	z-index: 10;
+}
+
+#levelnav {
+	display: inline;
+
+}
+
+#extra {
+	float: right;
+}
+
+.bodytext {
+	width: 95%;
+	padding-left: 10px;
+	padding-top: 10px;
+	position: absolute;
+	overflow-wrap: break-word;
+}
+
+.video {
+	position: absolute;
+	width: 1370px;
+	height: 700px;
+	top: 10px;
+	left: 10px;
+	border: white solid 1px;
+
+
+}
+
+.corpmenu {
+	float: right;
+	padding: 0px;
+	margin: 0px;
+	height: 1000px;
+	width: 30px;
+	background-color: blue;
+	border: white solid 1px;
+	z-index: 9
+
+}
+
+.nolist {
+	list-style: none;
+}
+
+.menubox {
+	position: relative;
+	z-index: 10;
+}
+ 
+.alert {
+	font-weight: bolder;
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	font-size: 200px;
+}
+
+#overlay {
+    background:#000;
+    opacity:0.5;
+    /*background:rgba(255,255,255,0.8); or just this*/
+    z-index:50;
+    color:#fff;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+	color: blue;
+    text-align: center;
+    padding: 5px 0;
+    border:solid 1px blue;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.chart{
+	width: 93%;
+	position: absolute;
+}
+
+#alert {
+	margin-top: 500px;	
+	width: 800px;
+	height: 500px;
+	margin: auto;
+	white-space: nowrap;
+	text-align: center;
+	font-size: 100px;
+	display: none;
+}
+
+.blank1 {
+}
+
+.blank1_options {
+	position: absolute;
+	top:70px;
+	left:30px;
+	display: none;
+}
+
+.blank1_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank2_options {
+	position: absolute;
+	top: 65px;
+    left: 341px;
+	display: none;
+}
+
+.blank2_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank3_options {
+	position: absolute;
+	top: 65px;
+    left: 531px;
+	display: none;
+}
+
+.blank3_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank4_options {
+	position: absolute;
+	top: 95px;
+    left: 83px;
+	display: none;
+}
+
+.blank4_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank5_options {
+	position: absolute;
+	top: 95px;
+    left: 334px;
+	display: none;
+}
+
+.blank5_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank6_options {
+	position: absolute;
+	top: 114px;
+    left: 46px;
+	display: none;
+}
+
+.blank6_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank7_options {
+	position: absolute;
+	top: 114px;
+    left: 994px;
+	display: none;
+}
+
+.blank7_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank8_options {
+	position: absolute;
+	top: 140px;
+    left: 456px;
+	display: none;
+}
+
+.blank8_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank9_options {
+	position: absolute;
+	top: 160px;
+    left: 701px;
+	display: none;
+}
+
+.blank9_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank10_options {
+	position: absolute;
+	top: 205px;
+    left: 325px;
+	display: none;
+}
+
+.blank10_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank11_options {
+	position: absolute;
+	top: 205px;
+   	left: 655px;
+	display: none;
+}
+
+.blank11_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank12_options {
+	position: absolute;
+	top: 205px;
+    left: 917px;
+	display: none;
+}
+
+.blank12_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank13_options {
+	position: absolute;
+	top: 226px;
+    left: 514px;
+	display: none;
+}
+
+.blank13_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank14_options {
+	position: absolute;
+	top: 251px;
+    left: 672px;
+	display: none;
+}
+
+.blank14_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank15_options {
+	position: absolute;
+	top: 275px;
+    left: 128px;
+	display: none;
+}
+
+.blank15_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.blank16_options {
+	position: absolute;
+	top: 298px;
+    left: 608px;
+	display: none;
+}
+
+.blank16_options:hover {
+	cursor:pointer;
+	background-color: blue;
+	color: white;
+}
+
+.show {
+	display: block;
+}
+
+.optionbox {
+    border: solid blue 1px;
+    background-color: white;
+    color: blue;
+    width: 115px;
+	padding: 5px;
+}
+
+.mainnav {
+	width: 95%;
+	height: 500px;
+	margin: auto;
+	list-style: none;
+
+}
+
+.mainnavitem {
+	width: 95%;
+	margin: 15px;
+	height: 30px;
+	border: 1px solid white;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+
+
+
+
+
